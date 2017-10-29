@@ -1,0 +1,466 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*重置amazeui内置样式*/
+.wrap {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 120;
+	background: rgba(52, 52, 52, .8);
+}
+.am-topbar {
+	background: none;
+	border: 0;
+}
+.am-topbar,
+.am-topbar a {
+	color: #fff;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.am-container {
+	padding: 0!important;
+}
+
+.am-topbar-nav>li.am-active>a:after {
+	opacity: 0;
+}
+
+.am-topbar-nav>li>a:hover:after {
+	opacity: 0;
+}
+.am-nav>li>a:hover {
+	background: none;
+	color: #0e90d2;
+}
+
+.am-nav>li {
+	transition: All 0.4s ease-in-out
+}
+
+.am-list,
+.am-topbar {
+	margin-bottom: 0px!important;
+}
+
+.swiper-slide>img {
+	width: 100%;
+}
+
+.my-animation-delay {
+	-webkit-animation-delay: 15s;
+	animation-delay: 15s;
+}
+/* body背景 */
+body{
+	background: url(../img/background.jpg)
+}
+.am-topbar-nav>li{
+	background: #74adaa;
+}
+.three-d {
+	/* 任务三、设置3D舞台布景 */
+	-webkit-perspective: 200px;
+	-moz-perspective: 200px;
+	-ms-perspective: 200px;
+	-o-perspective: 200px;
+	perspective: 200px;
+          /*任务四、设置3D舞台布景过渡效果*/
+	-webkit-transition: all .07s linear;
+ 	-moz-transition: all .07s linear;
+ 	-ms-transition: all .07s linear;
+ 	-o-transition: all .07s linear;
+ 	transition:all .7s linear;
+	position: relative;
+}
+.three-d:not(.active):hover {
+	cursor: pointer;
+}
+/*任务五、给不是当前状态的3D舞台的悬浮与聚焦状态设置变形效果*/
+.three-d:not(.active):hover .three-d-box,  .three-d:not(.active):focus .three-d-box {
+	-wekbit-transform: translateZ(-25px) rotateX(90deg);
+ 	-moz-transform: translateZ(-25px) rotateX(90deg);
+ 	-o-transform: translateZ(-25px) rotateX(90deg);
+ 	-ms-transform: translateZ(-25px) rotateX(90deg);
+ 	transform: translateZ(-25px) rotateX(90deg);
+/*    -webkit-transform:rotateX(90deg) translatez(-25px);*/
+       /*   -webkit-transform:rotatex(90deg);*/
+}
+.three-d-box {
+	/*任务六、给3D舞台中“.three-d-box”设置过渡与变形效果*/
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-ms-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;
+-webkit-transform: translatez(-25px);
+-moz-transform: translatez(-25px);
+-ms-transform: translatez(-25px);
+-o-transform: translatez(-25px);
+transform: translatez(-25px);
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-pointer-events: none;
+-moz-pointer-events: none;
+-ms-pointer-events: none;
+-o-pointer-events: none;
+pointer-events: none;
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+}
+.back {
+	-webkit-transform: rotatex(-90deg) translatez(25px);
+	-moz-transform: rotatex(-90deg) translatez(25px);
+	-ms-transform: rotatex(-90deg) translatez(25px);
+	-o-transform: rotatex(-90deg) translatez(25px);
+	transform: rotatex(-90deg) translatez(25px);
+	color: #FFE7C4;
+}
+.front, .back {
+	/*          border:1px solid red;*/
+	display: block;
+	width: 100%;
+	height: 101%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 24%;
+	background: #74adaa;
+	/* padding: 15px 30px 15px 31px; */
+	color: white;
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	-o-pointer-events: none;
+	pointer-events: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.am-topbar-nav li .active .front,  .am-topbar-nav li .active .back,  .am-topbar-nav li a:hover .front,  .am-topbar-nav li a:hover .back {
+	background-color: #51938f;
+	-webkit-background-size: 5px 5px;
+	background-size: 5px 5px;
+	background-position: 0 0, 30px 30px;
+	background-image: -webit-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+	background-image: -moz-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+	background-image: -ms-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+	background-image: -o-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+	background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+}
+
+.am-topbar-nav>li>a{
+	display: block;
+	padding:0 20px;
+}
+/* 公司荣誉 */
+.glories img{
+	width: 95%;
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+}
+/* 项目模块 */
+ul.navs{
+	padding-left:0!important;
+}
+/* 回到顶部 */
+#uptop {
+	position: fixed;
+	bottom: -50px;
+	right: 0px;
+	width: 50px;
+	z-index: 99;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+/* 在线客服 */
+.service{
+	position: fixed;
+	z-index: 2;
+	right: -86px;
+	top:50%;
+}
+.service>li{
+	text-align: center;
+	display: block;
+	width: 140px;
+	height: 50px;
+	margin-top:10px;
+	position: relative;	
+}
+.service li span{
+	width: 54px;
+	height: 50px;
+	color: #fff;
+	display: inline-block;
+	background: gray;
+	position: absolute;
+}
+.service li a{
+	width: 100px;
+	height: 50px;
+	margin-left: 54px;
+	color: pinkgreen;
+	text-decoration: none;
+	display: inline-block;
+	background: yellow;
+	transition:1s;
+	position: relative;	
+	z-index: -1;
+	text-align: center;
+	line-height: 50px;
+}
+.service>li>a:hover .none{
+	display: block;
+}
+.mine {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: red;
+	z-index: 1200;
+	font-weight: bolder;
+}
+
+.mine p {
+	margin: 50px auto 100px;
+	font-size: 75px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0;
+}
+
+/*在线客服2*/
+.slide{
+	width: 50px;
+	height: 200px;
+	position: fixed;
+	top: 50%;
+	margin-top: -126px;
+	background: #018D75;
+	right: 0;
+	border-radius: 5px 0 0 5px;
+	z-index: 999;
+}
+.slide ul{
+	list-style: none;
+	padding: 0;
+}
+.slide .icon li{
+	width: 49px;
+	height: 50px;
+	background: url(../img/icon.png) no-repeat;
+}
+.slide .icon .up{
+	background-position:-330px -120px ;
+}
+.slide .icon li.qq{
+	background-position:-385px -73px ;
+}
+.slide .icon li.tel{
+	background-position:-385px -160px ;
+}
+.slide .icon li.wx{
+	background-position:-385px -120px ;
+}
+.slide .icon li.down{
+	background-position:-330px -160px ;
+}
+.slide .info{
+	top: 50%;
+	height: 147px;
+	position: absolute;
+	right: 100%;
+	background: #018D75;
+	width: 0px;
+	overflow: hidden;
+	margin-top: -73.5px;
+	transition:0.5s;
+	border-radius:4px 0 0 4px ;
+}
+.slide .info.hover{
+	width: 145px;
+	
+}
+.slide .info li{
+	width: 145px;
+	color: #CCCCCC;
+	text-align: center;
+}
+.slide .info li p{
+	font-size: 1.1em;
+	line-height: 2em;
+	padding: 15px;
+	text-align: left;
+}
+.slide .info li.qq p a{
+	display: block;
+	margin-top: 12px;
+	width: 100px;
+	height: 32px;
+	line-height: 20px;
+	color: #00DFB9;
+	font-size: 14px;   
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #00DFB9;
+	border-radius: 5px;
+}
+.slide .info li.qq p a:hover{
+	color: #FFFFFF;
+	border: none;
+	background: #00E0DB;
+}
+.slide .info li div.img{
+	height: 100%;
+	background: #DEFFF9;
+	margin: 20px 30px 10px 15px;
+}
+.slide .info li div.img img{
+	width: 100%;
+	height: 100%;
+}
+/*控制菜单的按钮*/
+.index_cy{
+	width: 30px;
+	height: 30px;
+	background: url(../img/index_cy.png);
+	position: fixed;
+	right: 8px;
+	top: 50%;
+	margin-top: 100px;
+	background-position: 62px 0;
+	cursor: pointer;
+}
+.index_cy2{
+	width: 30px;
+	height: 30px;
+	background: url(../img/index_cy.png);
+	position: fixed;
+	right: 8px;
+	top: 50%;
+	margin-top: 100px;
+	background-position: 30px 0;
+	cursor: pointer;
+}
+
+/*自适应 当屏小于1050时隐藏*/
+/*@media screen and (max-width: 1050px) {
+	.slide{
+		display: none;
+	}
+	#btn{
+		display: none;
+	}
+	
+}*/
+
+
+.am-icon-arrow-up:before {
+	color: #029cfe;;
+}
+
+.am-container,
+.am-g-fixed {
+	max-width: 1200px;
+}
+/* 新闻资讯 */
+
+.news h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #029cfe;
+	padding-top: 40px;
+	margin-bottom: 0px!important;
+}
+
+.news .title {
+	text-align: center;
+	font-size: 14px;
+}
+
+.text {
+	padding: 8px 33px;
+}
+
+[class*=am-u-] {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.content {
+	margin-top: 35px;
+}
+/* 视频播放 */
+.video{
+	/* background: #fff; */
+	margin:0 auto;
+	display: block;
+}
+.video p{
+	padding-left:2.5%;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 32px;
+}
+.video p a{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #02b2b5;
+}
+.video video{
+	display: block;
+	margin: 0 auto;
+}
+.video img {
+	width: 100%;
+	display: block;
+}
+/* 底部 */
+.foot{
+	margin-top: 10%;
+	padding-top:5%;
+	background: url(../img/foot2.jpg) no-repeat;
+	background-size: cover;
+	color:#fff;
+}
+.footer{
+	text-align: center;
+}
+.footer a{
+	color: #fff;
+}
+.bottom{
+	font-size: 13px;
+}
+.footer a:hover{
+	color:#029cfe;
+	text-decoration: underline;
+}
+.footer li img{
+	margin: 0 auto;
+	display: block;
+}
+.footer dd{
+	font-size: 14px;
+}
+.wx{
+	margin: 0 10%;
+}
+

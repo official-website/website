@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="fadeInUp animated">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/amazeui.min.css">
+    <link rel="stylesheet" href="../../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <link rel="stylesheet" href="css/applicate.css">
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/amazeui.min.js"></script>
+    <script src="../../js/swiper-3.4.2.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 60%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            width: 40%;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="wrap">
+            <header class="am-topbar am-container">
+                <h1 class="am-topbar-brand">
+                    <a href="360度/index.html"><img src="../../img/logo.png" alt=""></a>
+                </h1>
+    
+                <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    
+                <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+                    <ul class="am-nav am-nav-pills am-topbar-nav" style="float:right">
+                        <li class=""><a href="../../index.html">首页</a></li>
+                        <li class="">
+                            <a href="../../article/article.html">项目板块</a>
+                        </li>
+                        <li class="">
+                            <a href="../../news/information/information.html">
+                            新闻资讯 
+                          </a>
+                        </li>
+                        <li class="">
+                            <a href="../../attract/information/information.html">
+                              战略规划 
+                            </a>
+                        </li>
+                        <li class="am-dropdown" data-am-dropdown>
+                            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="#">
+                                  关于我们 
+                                </a>
+                            <ul class=" am-dropdown-content">
+                                <li><a href="../../about/introduce/introduce.html">公司简介</a></li>
+                                <li><a href="../../about/staff/staff.html">员工风采</a></li>
+                                <li><a href="../../about/applicate/applicate.html">人才招聘</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="../../download/download.html">
+                              商务合作 
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </header>
+        </div>
+    <!-- banner展示 -->
+    <div class="am-g wrap-about">
+        <img src="img/about.jpg" alt="">
+    </div>
+    <!-- 内容 -->
+    <div class="am-container team">
+        <div class="title">招聘岗位<i class="fa fa-bookmark"></i></div>
+        <div id="demo">
+            <div id="indemo">
+                <div id="demo1">
+                    <a href="#">
+                        <img src="img/000108.jpg" alt="">
+                        <p>游戏开发工程师:(8-10k)</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/000109.jpg" alt="">
+                        <p>游戏开发工程师:(8-10k)</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/000110.jpg" alt="">
+                        <p>游戏开发工程师:(8-10k)</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/invite01.jpg" alt="">
+                        <p>游戏开发工程师:(8-10k)</p>
+                    </a>
+                </div>
+                <div id="demo2"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var speed = 10;
+        var tab = document.getElementById("demo");
+        var tab1 = document.getElementById("demo1");
+        var tab2 = document.getElementById("demo2");
+        tab2.innerHTML = tab1.innerHTML;
+
+        function Marquee() {
+            if (tab2.offsetWidth - tab.scrollLeft <= 0)
+                tab.scrollLeft -= tab1.offsetWidth
+            else {
+                tab.scrollLeft++;
+            }
+        }
+        var MyMar = setInterval(Marquee, speed);
+        tab.onmouseover = function () {
+            clearInterval(MyMar)
+        };
+        tab.onmouseout = function () {
+            MyMar = setInterval(Marquee, speed)
+        };
+    </script>
+    <div class="am-container team">
+        <ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-3 am-thumbnails">
+            <li class="list fadeInLeft animated">
+                <div>
+                    <a class="list_child" href="#">
+                                <i class="fa fa-home fa-fw fa-3x"></i>
+                            </a>
+                </div>
+                <h5>员工归属感</h5>
+                <p>定期开展员工活动</p>
+                <p>提升员工的归属感</p>
+            </li>
+            <li class="list zoomIn animated">
+                <div>
+                    <a class="list_child" href="#">
+                                    <i class="fa fa-home fa-fw fa-3x"></i>
+                                </a>
+                </div>
+                <h5>员工晋升</h5>
+                <p>提供职业规划和培训</p>
+                <p>为员工未来规划发力</p>
+            </li>
+            <li class="list fadeInRight animated">
+                <div>
+                    <a class="list_child" href="#">
+                                        <i class="fa fa-home fa-fw fa-3x"></i>
+                                    </a>
+                </div>
+                <h5>福利待遇</h5>
+                <p>优质的办公环境</p>
+                <p>完善的福利体系</p>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d569ad43f9c86d9c8157b9f71157151c"></script>
+    <div class="am-container team">
+        <div class="am-u-sm-12 am-u-md-6">
+            <div class="title">公司地址<i class="fa fa-bookmark"></i></div>
+            <div id="container" style="width:100%; height: 400px;margin:0 auto"></div>
+        </div>
+        <div class="am-u-sm-11 am-u-md-4 am-u-end am-u-md-offset-1">
+            <div class="title">我要求职<i class="fa fa-bookmark"></i></div>
+            <form action="" class="am-form" id="doc-vld-msg">
+                <fieldset>
+                    <legend>个人信息</legend>
+                    <div class="am-form-group">
+                        <label for="doc-vld-name-2-1">姓名：</label>
+                        <input type="text" id="doc-vld-name-2-1" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="doc-vld-email-2-1">电话：</label>
+                        <input type="email" id="doc-vld-email-2-1" data-validation-message="自定义提示信息：输入地球上的电话撒" placeholder="输入电话" required/>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="doc-vld-url-2-1">应聘岗位：</label>
+                        <input type="url" id="doc-vld-url-2-1" placeholder="应聘岗位：" required/>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="doc-ipt-file-1">请上传您的简历</label>
+                        <input type="file" id="doc-ipt-file-1">
+                        <p class="am-form-help">文件大小不超过4M</p>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="doc-vld-ta-2-1">评论：</label>
+                        <textarea id="doc-vld-ta-2-1" minlength="10" maxlength="100"></textarea>
+                    </div>
+                    <button class="am-btn am-btn-secondary" type="submit">提交</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#doc-vld-msg').validator({
+                onValid: function (validity) {
+                    $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+                },
+
+                onInValid: function (validity) {
+                    var $field = $(validity.field);
+                    var $group = $field.closest('.am-form-group');
+                    var $alert = $group.find('.am-alert');
+                    // 使用自定义的提示信息 或 插件内置的提示信息
+                    var msg = $field.data('validationMessage') || this.getValidationMessage(
+                        validity);
+
+                    if (!$alert.length) {
+                        $alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+                        appendTo($group);
+                    }
+
+                    $alert.html(msg).show();
+                }
+            });
+        });
+    </script>
+    <script>
+        var map = new AMap.Map('container');
+        map.setZoom(16);
+        map.setCenter([114.3444322332, 30.5567705811]);
+
+        var marker = new AMap.Marker({
+            position: [114.3444478512, 30.5567732122],
+            map: map
+        });
+
+        marker.setMap(map);
+        marker.on('click', function (e) {
+            infowindow.open(map, e.target.getPosition());
+        })
+        AMap.plugin('AMap.AdvancedInfoWindow', function () {
+            infowindow = new AMap.AdvancedInfoWindow({
+                content: '<div class="info-content">' +
+                    '硕利科技' + '</div>',
+                offset: new AMap.Pixel(0, -30)
+            });
+            infowindow.open(map, [114.3444322332, 30.5567705811]);
+        })
+        AMap.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.OverView'],
+            function () {
+                map.addControl(new AMap.ToolBar());
+                map.addControl(new AMap.Scale());
+            });
+    </script>
+    <!-- 底部 -->
+    <div class="am-g foot">
+        <div class="am-container footer">
+            <div class="am-u-sm-12 am-u-md-8 am-u-lg-8">
+                <ul class="am-avg-sm-5 am-avg-md-5 am-avg-lg-5 am-thumbnails">
+                    <li>
+                        <dl>
+                            <dt>项目模块</dt>
+                            <dd><a href="../items/retail/retail.html">新零售</a></dd>
+                            <dd><a href="../items/help/help.html">任务帮</a></dd>
+                            <dd><a href="../items/finger/finger.html">指尖娱乐</a></dd>
+                            <dd><a href="../items/vr/vr.html">VR教育</a></dd>
+                            <dd><a href="../items/smart/smart.html">智能家居</a></dd>
+                            <dd><a href="../items/makeup/makeup.html">妆修</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>新闻资讯</dt>
+                            <dd><a href="../news/information/information.html">企业新闻</a></dd>
+                            <dd><a href="../news/video/video.html">企业视频</a></dd>
+                            <dd><a href="../news/dynamic/dynamic.html">行业动态</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>招商合作</dt>
+                            <dd><a href="../attract/information/information.html">企业资讯</a></dd>
+                            <dd><a href="../attract/join/join.html">我要加入</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>下载中心</dt>
+                            <dd><a href="../download/download.html">任务帮</a></dd>
+                            <dd><a href="../download/download.html">新零售</a></dd>
+                            <dd><a href="../download/download.html">指尖娱乐</a></dd>
+                            <dd><a href="../download/download.html">妆修</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关于我们</dt>
+                            <dd><a href="../about/about.html">公司介绍</a></dd>
+                            <dd><a href="../about/about.html">人才招聘</a></dd>
+                            <dd><a href="../about/about.html">员工风采</a></dd>
+                            <dd><a href="../about/about.html">联系我们</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">
+                <ul class="am-avg-sm-3 am-avg-lg-4 am-thumbnails">
+                    <li class="wx">
+                        <img class="am-thumbnail" src="../../img/weixin.jpg" />
+                    </li>
+                    <li>
+                        <img class="am-thumbnail" src="../../img/weixin.jpg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="am-u-sm-12 bottom">
+                <div>Copyright 2017 Powerleader All Rights Reserved 硕利科技版权所有</div>
+                <div>网站备案许可证号：粤ICP备17097175号-1</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

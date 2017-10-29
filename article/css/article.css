@@ -1,0 +1,36 @@
+.item1{
+    background: url(../img/任务帮.jpg) 50% center;
+}
+.item2{
+    background: url(../img/新零售.jpg) 50% center;
+    background-size: cover;
+}
+.item3{
+    background: url(../img/VR.jpg) 50% center;
+    background-size: cover;
+}
+.item4{
+    background: url(../img/妆秀.jpg) 50% center;
+    background-size: cover;
+}
+.item5{
+    background: url(../img/智能家居.jpg) 50% center;
+    background-size: cover;
+}
+.item6{
+    background: url(../img/钱咖360.jpg) 50% center;
+    background-size: cover;
+}
+h3{
+    font-size: 40px
+}
+.item1,.item2,.item3,.item4,.item5>p{
+    font-size: 16px;
+    text-indent: 2em;
+}
+.item1,.item2,.item3,.item4{
+    color: #fff;
+}
+.item5{
+    color:black;
+}

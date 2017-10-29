@@ -1,0 +1,27 @@
+.introduce img{
+    width: 100%;
+    display: block
+}
+.wrap-about img{
+    width: 100%;
+    display: block
+}
+.contents{
+    padding-left: 4%;
+}
+.contents p{
+    text-indent: 2em;
+}
+.company{
+    margin-top:40px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 800;
+    color: #02b2b5;
+    padding-bottom: 20px;
+}
+.title i{
+    padding-left: 15px;
+    color: red;
+}

@@ -1,0 +1,77 @@
+.wrap-about img {
+    width: 100%;
+    display: block;
+}
+
+.silderPic {
+    padding: 2%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #02b2b5;
+    padding-bottom: 20px;
+}
+
+.title i {
+    padding-left: 15px;
+    color: red;
+}
+
+.team {
+    margin-top: 5%;
+}
+/* 无缝滚动 */
+#demo {  
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+#demo img {
+    border: 3px solid #F2F2F2;
+}
+
+#indemo {
+    float: left;
+    width: 100000%;
+}
+
+#demo1 {
+    float: left;
+}
+#demo1 a{
+    float: left;
+}
+#demo1 img{
+    width: 100%;
+    display: block;
+}
+#demo2 a{
+    float: left;
+}
+#demo2 {
+    float: left;
+}
+.list{
+    margin: 0 auto;
+    text-align: center;
+}
+.list_child{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #8D54E7;
+}
+.list_child i{
+    display: block;
+    margin: 0 auto;
+    line-height: 120px;
+}
+.list p{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
